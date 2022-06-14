@@ -15,18 +15,18 @@
       </div>
       <div class="row justify-content-center mt-md-3">
         <div class="row justify-content-center text-center shadow" style="background-color: white; width: 300px; height: 300px; border-radius: 40px; border: 3px #aedbce">
-          <a href="#"><canvas style="padding: 10px" id="canvas"></canvas></a>
+          <canvas class="m-auto" style="padding: 10px" id="canvas"></canvas>
         </div>
 
         <div class="row justify-content-center text-center mt-3">
           <div style="width: 400px; height: 50px" class="input-group row justify-content-center mt-2">
             <input style="border-radius: 20px" type="text" class="form-control shadow" placeholder="Masukkan link/text" id="qrInput" onchange="generateQR()" />
-            <form class="mt-md-3" method="post" enctype="multipart/form-data">
+            <!-- <form class="mt-md-3" method="post" enctype="multipart/form-data">
               <input style="border-radius: 20px" type="file" class="form-control shadow" id="qrInput2" onchange="generateQR()" />
-            </form>
+            </form> -->
           </div>
         </div>
-        <div class="row mt-md-5" style="width: 220px; height: 100px; padding-bottom: 50px; padding-top: 10px">
+        <div class="row mt-md-3" style="width: 220px; height: 100px; padding-bottom: 50px; padding-top: 10px">
           <button style="border-radius: 20px; border: #a0d995" class="btn btn-outline-success shadow" id="qrBtn"><b> GENERATE</b></button>
 
           <!-- <text class="shadow p-1" style="font-size: 20px; border-radius: 10px"><b> Tekan ENTER untuk Generate!</b></text> -->
@@ -39,7 +39,7 @@
         // fakepath.split('fakepath\\');
         let canvas = document.getElementById('canvas');
         let qrInput = document.getElementById('qrInput');
-        let qrInput2 = document.getElementById('qrInput2');
+        // let qrInput2 = document.getElementById('qrInput2');
         let qrBtn = document.getElementById('qrBtn');
 
         qrBtn.addEventListener('click', () => {
@@ -49,12 +49,12 @@
           });
         });
 
-        qrBtn.addEventListener('click', () => {
-          QRCode.toCanvas(canvas, qrInput2.files[0].name, { width: 280, height: 280 }, (err) => {
-            if (err) console.error(err);
-            console.log('Scan Berhasil..');
-          });
-        });
+        // qrBtn.addEventListener('click', () => {
+        //   QRCode.toCanvas(canvas, qrInput2.files[0].name, { width: 280, height: 280 }, (err) => {
+        //     if (err) console.error(err);
+        //     console.log('Scan Berhasil..');
+        //   });
+        // });
       }
     </script>
   </body>
