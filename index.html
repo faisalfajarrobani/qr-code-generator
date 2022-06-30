@@ -4,61 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="logoklmpk.png" />
-    <title>QRcode Generator website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <title>hehehe</title>
   </head>
-  <body style="background-color: #85ffbd; background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%)">
-    <div class="container pt-md-3 shadow pb-md-2" style="border-radius: 20px">
-      <div class="text-center mt-md-3">
-        <h1 style="font-size: 50px; color: #4d4c7d"><b>QR Code</b> Generator</h1>
-      </div>
-      <div class="row justify-content-center mt-md-3">
-        <div class="row justify-content-center text-center shadow" style="background-color: white; width: 300px; height: 300px; border-radius: 40px; border: 3px #aedbce">
-          <canvas class="m-auto" style="padding: 10px" id="canvas"></canvas>
-        </div>
-
-        <div class="row justify-content-center text-center mt-2">
-          <div style="width: 400px; height: 50px" class="input-group row justify-content-center mt-2">
-            <input style="border-radius: 20px" type="text" class="form-control shadow" placeholder="Masukkan link/text" id="qrInput" onchange="generateQR()" />
-            <!-- <form class="mt-md-3" method="post" enctype="multipart/form-data">
-              <input style="border-radius: 20px" type="file" class="form-control shadow" id="qrInput2" onchange="generateQR()" />
-            </form> -->
-          </div>
-        </div>
-        <div class="row mt-md-3" style="width: 220px; height: 100px; padding-bottom: 50px; padding-top: 10px">
-          <button style="border-radius: 20px; border: #a0d995" class="btn btn-outline-success shadow" id="qrBtn"><b> GENERATE</b></button>
-
-          <!-- <text class="shadow p-1" style="font-size: 20px; border-radius: 10px"><b> Tekan ENTER untuk Generate!</b></text> -->
-        </div>
-      </div>
-    </div><footer class="text-center pt-md-1" style="color: rgb(9, 31, 24)">
-      <i>Build with love ©, 2022 faisal fajar</i>
-    </footer>
-    <script src="qrcode.js"></script>
-    <script>
-      function generateQR() {
-        // fakepath.split('fakepath\\');
-        let canvas = document.getElementById('canvas');
-        let qrInput = document.getElementById('qrInput');
-        // let qrInput2 = document.getElementById('qrInput2');
-        let qrBtn = document.getElementById('qrBtn');
-
-        qrBtn.addEventListener('click', () => {
-          QRCode.toCanvas(canvas, qrInput.value, { width: 280, height: 280 }, (err) => {
-            if (err) console.error(err);
-            console.log('Scan Berhasil..');
-          });
-        });
-
-        // qrBtn.addEventListener('click', () => {
-        //   QRCode.toCanvas(canvas, qrInput2.files[0].name, { width: 280, height: 280 }, (err) => {
-        //     if (err) console.error(err);
-        //     console.log('Scan Berhasil..');
-        //   });
-        // });
-      }
-    </script>
+  <body style="text-align: center; justify-content: center">
+    <img src="y.jpg" width="500px" />
+    <h1>hehehe</h1>
   </body>
 </html>
-<!-- background: url(imag.jpg) no-repeat; background-size: cover -->
